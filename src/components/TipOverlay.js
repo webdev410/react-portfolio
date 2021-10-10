@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { Tooltip } from "react-bootstrap";
-import { Button } from "react-bootstrap";
 import { OverlayTrigger } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -10,26 +9,26 @@ import { faGlobe } from "@fortawesome/pro-regular-svg-icons";
 export default function LinkedinTooltip() {
 	const sites = [
 		{
-			name: "github",
+			name: "Github",
 			url: "https://github.com/webdev410",
 			iconClass: "bi bi-github",
 		},
 		{
-			name: "linkedin",
+			name: "LinkedIn",
 			url: "https://github.com/webdev410",
 			iconClass: "bi bi-linkedin",
 		},
 		{
-			name: "portfolio",
+			name: "Portfolio",
 			url: "https://andrewkeiser.me",
 			iconClass: "bi bi-globe2",
 		},
 	];
 
 	const renderIcon = (sites) => {
-		if (sites.name === "github") {
+		if (sites.name === "Github") {
 			return <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>;
-		} else if (sites.name === "linkedin") {
+		} else if (sites.name === "LinkedIn") {
 			return <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>;
 		} else {
 			return <FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon>;

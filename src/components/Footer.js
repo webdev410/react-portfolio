@@ -1,5 +1,5 @@
 import React from "react";
-import LinkedinTooltip from "./LinkedinTooltip";
+import TipOverlay from "./TipOverlay";
 
 export default function Footer() {
 	return (
@@ -11,7 +11,7 @@ export default function Footer() {
 					</div>
 
 					<ul className="nav col-md-4 justify-content-end list-unstyled d-flex footer-list">
-						<LinkedinTooltip></LinkedinTooltip>
+						<TipOverlay></TipOverlay>
 					</ul>
 				</footer>
 			</div>
