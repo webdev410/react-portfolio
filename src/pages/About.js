@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/About.css";
 
 export default function About() {
 	return (
@@ -20,10 +21,10 @@ export default function About() {
 				</div>
 				<div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
 					<button className="btn btn-primary btn-lg px-4 gap-3">
-						Button
+						Projects
 					</button>
 					<button className="btn btn-outline-secondary btn-lg px-4 gap-3">
-						Button
+						Contact
 					</button>
 				</div>
 			</div>

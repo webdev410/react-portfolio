@@ -1,15 +1,27 @@
 import React, { useState } from "react";
 
-import "./App.css";
+import "./css/App.css";
+
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Portfolio from "./components/Portfolio";
-import Resume from "./components/Resume";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
+import Resume from "./pages/Resume";
+import Footer from "./components/Footer";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+	fab,
+	faLinkedin,
+	faGit,
+	faFirefoxBrowser,
+} from "@fortawesome/free-brands-svg-icons";
+
+library.add(fab, faLinkedin, faGit, faFirefoxBrowser);
 
 function App() {
-	const [currentPage, setCurrentPage] = useState("Home");
+	const [currentPage, setCurrentPage] = useState("About");
 
 	const renderPage = () => {
 		if (currentPage === "Home") {
@@ -33,7 +45,7 @@ function App() {
 	const handlePageChange = (page) => setCurrentPage(page);
 
 	return (
-		<div className="App">
+		<div className="App d-flex flex-column justify-content-between">
 			{/* Pass Variables through to navbar */}
 			<Navbar
 				currentPage={currentPage}
@@ -41,6 +53,9 @@ function App() {
 			></Navbar>
 			{/* Render component based off currentPage state */}
 			{renderPage()}
+			<div className="">
+				<Footer className=""></Footer>
+			</div>
 		</div>
 	);
 }
