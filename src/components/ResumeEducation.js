@@ -5,11 +5,11 @@ export default function ResumeEducation() {
 		<div>
 			<h1 className="display-5 fw-bold">Education</h1>
 
-			<div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
+			<div className="row g-4 py-5 row-cols-1 row-cols-lg-2">
 				<div className="feature col">
 					<div className="feature-icon bg-gradient">
 						<img
-							src="img/godaddy.png"
+							src="img/jhu.png"
 							className="university-logo"
 							alt=""
 						/>
@@ -18,45 +18,32 @@ export default function ResumeEducation() {
 				<div className="feature col">
 					<div className="feature-icon bg-gradient">
 						<img
-							src="img/dhs.png"
-							className="university-logo"
-							alt=""
-						/>
-					</div>
-				</div>
-				<div className="feature col">
-					<div className="feature-icon bg-gradient">
-						<img
-							src="img/ticketmaster.png"
+							src="img/asu.png"
 							className="university-logo"
 							alt=""
 						/>
 					</div>
 				</div>
 			</div>
-			<div className="row g-4 py-2 row-cols-1 row-cols-lg-3">
+			<div className="row g-4 py-2 row-cols-1 row-cols-lg-2">
 				<div className="feature col">
-					<h2>GoDaddy</h2>
-					<p>Hosting Sales & Support</p>
+					<h2>Johns Hopkins University</h2>
+					<p>
+						An intensive 24-week bootcamp covering both front-end
+						and back-end development.
+					</p>
 				</div>
 				<div className="feature col">
-					<h2>Department of Homeland Security</h2>
-					<p>Technical Support</p>
-				</div>
-				<div className="feature col">
-					<h2>Ticketmaster</h2>
-					<p>Product Support</p>
+					<h2>Arizona State University</h2>
+					<p>Bachelor of Arts: English (Creative Writing)</p>
 				</div>
 			</div>
-			<div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
+			<div className="row g-4 py-5 row-cols-1 row-cols-lg-2">
 				<div className="feature col">
-					<code>2020-2021</code>
+					<code>Academic Average: A+</code>
 				</div>
 				<div className="feature col">
-					<code>2020</code>
-				</div>
-				<div className="feature col">
-					<code>2015-2018</code>
+					<code>Graduation: 2014</code>
 				</div>
 			</div>
 		</div>

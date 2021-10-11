@@ -5,11 +5,11 @@ export default function ResumeExperience() {
 		<div>
 			<h1 className="display-5 fw-bold">Experience</h1>
 
-			<div className="row g-4 py-5 row-cols-1 row-cols-lg-2">
+			<div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
 				<div className="feature col">
 					<div className="feature-icon bg-gradient">
 						<img
-							src="img/jhu.png"
+							src="img/godaddy.png"
 							className="university-logo"
 							alt=""
 						/>
@@ -18,32 +18,45 @@ export default function ResumeExperience() {
 				<div className="feature col">
 					<div className="feature-icon bg-gradient">
 						<img
-							src="img/asu.png"
+							src="img/dhs.png"
+							className="university-logo"
+							alt=""
+						/>
+					</div>
+				</div>
+				<div className="feature col">
+					<div className="feature-icon bg-gradient">
+						<img
+							src="img/ticketmaster.png"
 							className="university-logo"
 							alt=""
 						/>
 					</div>
 				</div>
 			</div>
-			<div className="row g-4 py-2 row-cols-1 row-cols-lg-2">
+			<div className="row g-4 py-2 row-cols-1 row-cols-lg-3">
 				<div className="feature col">
-					<h2>Johns Hopkins University</h2>
-					<p>
-						An intensive 24-week bootcamp covering both front-end
-						and back-end development.
-					</p>
+					<h2>GoDaddy</h2>
+					<p>Hosting Sales & Support</p>
 				</div>
 				<div className="feature col">
-					<h2>Arizona State University</h2>
-					<p>Bachelor of Arts: English (Creative Writing)</p>
+					<h2>Department of Homeland Security</h2>
+					<p>Technical Support</p>
+				</div>
+				<div className="feature col">
+					<h2>Ticketmaster</h2>
+					<p>Product Support</p>
 				</div>
 			</div>
-			<div className="row g-4 py-5 row-cols-1 row-cols-lg-2">
+			<div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
 				<div className="feature col">
-					<code>Academic Average: A+</code>
+					<code>2020-2021</code>
 				</div>
 				<div className="feature col">
-					<code>Graduation: 2014</code>
+					<code>2020</code>
+				</div>
+				<div className="feature col">
+					<code>2015-2018</code>
 				</div>
 			</div>
 		</div>
