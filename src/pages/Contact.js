@@ -5,16 +5,6 @@ export default function Contact(props) {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
-	// const [valid, setValid] = useState(false);
-
-	// const styles = {
-	// 	valid: {
-	// 		border: "1px solid green !important",
-	// 	},
-	// 	invalid: {
-	// 		border: "1px solid red !important",
-	// 	},
-	// };
 
 	useEffect(() => {
 		document.title = `${props.title}`;
@@ -37,20 +27,6 @@ export default function Contact(props) {
 			setMessage(inputValue);
 		}
 	};
-	// function formValidator() {
-	// 	if (name.length > 0) {
-	// 		setValid(true);
-	// 		return;
-	// 	}
-	// 	if (email.length > 0) {
-	// 		setValid(true);
-	// 		return;
-	// 	}
-	// 	if (message.length > 0) {
-	// 		setValid(true);
-	// 		return;
-	// 	}
-	// }
 
 	const handleFormSubmit = (e) => {
 		e.preventDefault();

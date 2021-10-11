@@ -14,7 +14,7 @@ export default function ResumeNav({ currentModule, handleModuleChange }) {
 										? "nav-link active"
 										: "nav-link"
 								}
-								href="#technologies"
+								href="#title"
 								onClick={() => handleModuleChange("title")}
 							>
 								Resume
@@ -28,7 +28,7 @@ export default function ResumeNav({ currentModule, handleModuleChange }) {
 										? "nav-link active"
 										: "nav-link"
 								}
-								href="#technologies"
+								href="#education"
 								onClick={() => handleModuleChange("education")}
 							>
 								Education
@@ -42,7 +42,7 @@ export default function ResumeNav({ currentModule, handleModuleChange }) {
 										? "nav-link active"
 										: "nav-link"
 								}
-								href="#technologies"
+								href="#experience"
 								onClick={() => handleModuleChange("experience")}
 							>
 								Experience

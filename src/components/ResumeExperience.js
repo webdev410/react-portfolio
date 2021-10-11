@@ -37,26 +37,23 @@ export default function ResumeExperience() {
 			<div className="row g-4 py-2 row-cols-1 row-cols-lg-3">
 				<div className="feature col">
 					<h2>GoDaddy</h2>
-					<p>Hosting Sales & Support</p>
 				</div>
 				<div className="feature col">
 					<h2>Department of Homeland Security</h2>
-					<p>Technical Support</p>
 				</div>
 				<div className="feature col">
 					<h2>Ticketmaster</h2>
-					<p>Product Support</p>
 				</div>
 			</div>
 			<div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
 				<div className="feature col">
-					<code>2020-2021</code>
+					<p>Hosting Sales & Support</p>
 				</div>
 				<div className="feature col">
-					<code>2020</code>
+					<p>Technical Support</p>
 				</div>
 				<div className="feature col">
-					<code>2015-2018</code>
+					<p>Product Support</p>
 				</div>
 			</div>
 		</div>
