@@ -26,7 +26,7 @@ export default function Resume(props) {
 	};
 	const handleModuleChange = (module) => setModule(module);
 	useEffect(() => {
-		document.title = `${props.title}`;
+		document.title = `${props.title} | React Portfolio`;
 	});
 	return (
 		<div>

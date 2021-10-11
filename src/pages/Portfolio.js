@@ -53,7 +53,7 @@ const portfolioItems = [
 
 export default function Portfolio(props) {
 	useEffect(() => {
-		document.title = `${props.title}`;
+		document.title = `${props.title} | React Portfolio`;
 	});
 	return (
 		<div>

@@ -8,7 +8,7 @@ export default function Contact(props) {
 	const [message, setMessage] = useState("");
 
 	useEffect(() => {
-		document.title = `${props.title}`;
+		document.title = `${props.title} | React Portfolio`;
 	});
 
 	const handleInputChange = (e) => {
@@ -62,21 +62,22 @@ export default function Contact(props) {
 				<div className="row align-items-center g-lg-5 py-5">
 					<div className="col-lg-7 text-center text-lg-start">
 						<h1 className="display-4 fw-bold lh-1 mb-3">
-							Vertically centered hero sign-up form
+							Send a message
 						</h1>
 						<p className="col-lg-10 fs-4">
-							Below is an example form built entirely with
-							Bootstrap’s form controls. Each required form group
-							has a validation state that can be triggered by
-							attempting to submit the form without completing it.
+							This form doesn't actually submit since this is only
+							a front-end application. To send me a message,
+							please email:
 						</p>
+						<a href="mailto:info@andrewkeiser.me">
+							info@andrewkeiser.me
+						</a>
 					</div>
 					<div className="col-md-10 mx-auto col-lg-5">
 						<form className="p-4 p-md-5 border rounded-3 bg-light">
-							<h1 className="display-6 fw-bold">{props.title}</h1>
-
 							<div className="form-floating mb-3">
 								<input
+									key="afl2423"
 									className={
 										name
 											? "form-control m-1 valid"
@@ -84,38 +85,42 @@ export default function Contact(props) {
 									}
 									name="name"
 									onChange={handleInputChange}
-									value={name}
-									type="text"
 									placeholder="Name"
+									value={name}
+									required="true"
+									type="text"
 								/>
 							</div>
-							<div class="form-floating mb-3">
+							<div className="form-floating mb-3">
 								<input
+									key="afl2233"
 									className={
 										email
 											? "form-control m-1 valid"
 											: "form-control m-1 invalid"
 									}
 									name="email"
+									placeholder="Email"
 									value={email}
 									onChange={handleInputChange}
-									type="email"
-									placeholder="Email"
+									type="text"
+									required="true"
 								/>
 							</div>
 							<div className="checkbox mb-3">
-								<textarea
+								<input
+									key="af1234l2423"
 									className={
 										message
 											? "form-control m-1 valid"
 											: "form-control m-1 invalid"
 									}
 									name="message"
+									placeholder="Message"
 									value={message}
 									onChange={handleInputChange}
 									type="text"
 									required="true"
-									placeholder="Message"
 								/>
 							</div>
 							<button

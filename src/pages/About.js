@@ -3,7 +3,7 @@ import "../css/About.css";
 
 export default function About(props) {
 	useEffect(() => {
-		document.title = `${props.title}`;
+		document.title = `${props.title} | React Portfolio`;
 	});
 	return (
 		<div>
