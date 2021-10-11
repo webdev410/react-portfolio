@@ -1,10 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { validateEmail } from "../utils/helpers";
 
-export default function Contact() {
+export default function Contact(props) {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
+	// const [valid, setValid] = useState(false);
+
+	// const styles = {
+	// 	valid: {
+	// 		border: "1px solid green !important",
+	// 	},
+	// 	invalid: {
+	// 		border: "1px solid red !important",
+	// 	},
+	// };
+
+	useEffect(() => {
+		document.title = `${props.title}`;
+	});
 
 	const handleInputChange = (e) => {
 		// Getting the value and name of the input which triggered the change
@@ -23,6 +37,20 @@ export default function Contact() {
 			setMessage(inputValue);
 		}
 	};
+	// function formValidator() {
+	// 	if (name.length > 0) {
+	// 		setValid(true);
+	// 		return;
+	// 	}
+	// 	if (email.length > 0) {
+	// 		setValid(true);
+	// 		return;
+	// 	}
+	// 	if (message.length > 0) {
+	// 		setValid(true);
+	// 		return;
+	// 	}
+	// }
 
 	const handleFormSubmit = (e) => {
 		e.preventDefault();
@@ -55,6 +83,7 @@ export default function Contact() {
 
 	return (
 		<div className="form-signin">
+			<h1 className="display-5 fw-bold">{props.title}</h1>
 			<div className="d-flex justify-content-center">
 				<form className="" action="POST">
 					<input

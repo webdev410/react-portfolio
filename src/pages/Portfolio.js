@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/Portfolio.css";
 
 import PortfolioCard from "../components/PortfolioCard";
@@ -51,24 +51,30 @@ const portfolioItems = [
 	},
 ];
 
-export default function Portfolio() {
+export default function Portfolio(props) {
+	useEffect(() => {
+		document.title = `${props.title}`;
+	});
 	return (
-		<div className="container">
-			<p>
-				This is simply a react version of my portfolio. A full portfolio
-				can be found
-				<a className="m-1" href="https://www.andrewkeiser.me">
-					here.
-				</a>
-			</p>
-			<div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-				{portfolioItems.map((site) => (
-					<PortfolioCard
-						title={site.title}
-						repo={site.repo}
-						deployed={site.deployed}
-					></PortfolioCard>
-				))}
+		<div>
+			<h1 className="display-5 fw-bold">{props.title}</h1>
+			<div className="container">
+				<p>
+					This is simply a react version of my portfolio. A full
+					portfolio can be found
+					<a className="m-1" href="https://www.andrewkeiser.me">
+						here.
+					</a>
+				</p>
+				<div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+					{portfolioItems.map((site) => (
+						<PortfolioCard
+							title={site.title}
+							repo={site.repo}
+							deployed={site.deployed}
+						></PortfolioCard>
+					))}
+				</div>
 			</div>
 		</div>
 	);

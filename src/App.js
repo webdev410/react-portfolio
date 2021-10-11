@@ -25,19 +25,19 @@ function App() {
 
 	const renderPage = () => {
 		if (currentPage === "Home") {
-			return <Home></Home>;
+			return <Home title="Home"></Home>;
 		}
 		if (currentPage === "About") {
-			return <About></About>;
+			return <About title="About"></About>;
 		}
 		if (currentPage === "Portfolio") {
-			return <Portfolio></Portfolio>;
+			return <Portfolio title="Portfolio"></Portfolio>;
 		}
 		if (currentPage === "Resume") {
-			return <Resume></Resume>;
+			return <Resume title="Resume"></Resume>;
 		}
 		if (currentPage === "Contact") {
-			return <Contact></Contact>;
+			return <Contact title="Contact"></Contact>;
 		}
 	};
 

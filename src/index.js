@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./css/index.css";
 import App from "./App";
-
 import "bootstrap/dist/js/bootstrap.bundle";
 import "react-bootstrap/dist/react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
