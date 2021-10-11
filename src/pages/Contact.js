@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../css/Contact.css";
 import { validateEmail } from "../utils/helpers";
 
 export default function Contact(props) {
@@ -15,8 +16,6 @@ export default function Contact(props) {
 		const { target } = e;
 		const inputType = target.name;
 		const inputValue = target.value;
-
-		console.log(target.value.length);
 
 		// Based on the input type, we set the state of either email, username, and password
 		if (inputType === "email") {
@@ -58,38 +57,87 @@ export default function Contact(props) {
 	};
 
 	return (
-		<div className="form-signin">
-			<h1 className="display-5 fw-bold">{props.title}</h1>
-			<div className="d-flex justify-content-center">
-				<form className="" action="POST">
-					<input
-						className="form-control"
-						name="name"
-						onChange={handleInputChange}
-						value={name}
-						type="text"
-						placeholder="Name"
-					/>
-					<input
-						className="form-control"
-						name="email"
-						value={email}
-						onChange={handleInputChange}
-						type="text"
-						placeholder="Email"
-					/>
-					<input
-						className="form-control"
-						name="message"
-						value={message}
-						onChange={handleInputChange}
-						type="text"
-						placeholder="Message"
-					/>
-					<button type="button" onClick={handleFormSubmit}>
-						Submit
-					</button>
-				</form>
+		<div>
+			<div className="container col-xl-10 col-xxl-8 px-4 py-5">
+				<div className="row align-items-center g-lg-5 py-5">
+					<div className="col-lg-7 text-center text-lg-start">
+						<h1 className="display-4 fw-bold lh-1 mb-3">
+							Vertically centered hero sign-up form
+						</h1>
+						<p className="col-lg-10 fs-4">
+							Below is an example form built entirely with
+							Bootstrap’s form controls. Each required form group
+							has a validation state that can be triggered by
+							attempting to submit the form without completing it.
+						</p>
+					</div>
+					<div className="col-md-10 mx-auto col-lg-5">
+						<form className="p-4 p-md-5 border rounded-3 bg-light">
+							<h1 className="display-6 fw-bold">{props.title}</h1>
+
+							<div className="form-floating mb-3">
+								<input
+									className={
+										name
+											? "form-control m-1 valid"
+											: "form-control m-1 invalid"
+									}
+									name="name"
+									onChange={handleInputChange}
+									value={name}
+									type="text"
+									placeholder="Name"
+								/>
+							</div>
+							<div class="form-floating mb-3">
+								<input
+									className={
+										email
+											? "form-control m-1 valid"
+											: "form-control m-1 invalid"
+									}
+									name="email"
+									value={email}
+									onChange={handleInputChange}
+									type="email"
+									placeholder="Email"
+								/>
+							</div>
+							<div className="checkbox mb-3">
+								<textarea
+									className={
+										message
+											? "form-control m-1 valid"
+											: "form-control m-1 invalid"
+									}
+									name="message"
+									value={message}
+									onChange={handleInputChange}
+									type="text"
+									required="true"
+									placeholder="Message"
+								/>
+							</div>
+							<button
+								type="button"
+								className="mt-2 btn btn-primary"
+								onClick={handleFormSubmit}
+							>
+								Submit
+							</button>
+
+							<p className="text-muted">
+								By clicking Sign up, you agree to the terms of
+								use.
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div className="form-signin">
+				<div className="d-flex justify-content-center">
+					<form className="needs-validation" action="POST"></form>
+				</div>
 			</div>
 		</div>
 	);

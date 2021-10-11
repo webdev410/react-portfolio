@@ -6,7 +6,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/pro-regular-svg-icons";
 
-export default function LinkedinTooltip() {
+export default function TipOverlay() {
 	const sites = [
 		{
 			name: "Github",
