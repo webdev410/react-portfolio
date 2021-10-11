@@ -5,6 +5,8 @@ import "../css/Resume.css";
 import Technologies from "../components/ResumeTechnologies";
 import ResumeMain from "../components/ResumeMain";
 import ResumeNav from "../components/ResumeNav";
+import ResumeExperience from "../components/ResumeExperience";
+import ResumeEducation from "../components/ResumeEducation";
 
 export default function Resume(props) {
 	const [currentModule, setModule] = useState("title");
@@ -12,6 +14,12 @@ export default function Resume(props) {
 	const renderModule = () => {
 		if (currentModule === "technologies") {
 			return <Technologies></Technologies>;
+		}
+		if (currentModule === "education") {
+			return <ResumeEducation></ResumeEducation>;
+		}
+		if (currentModule === "experience") {
+			return <ResumeExperience></ResumeExperience>;
 		} else {
 			return <ResumeMain title="Resume"></ResumeMain>;
 		}
@@ -22,11 +30,15 @@ export default function Resume(props) {
 	});
 	return (
 		<div>
-			{renderModule()}
-			<ResumeNav
-				currentModule={currentModule}
-				handleModuleChange={handleModuleChange}
-			></ResumeNav>
+			<div className="d-flex flex-column justify-content-between">
+				<div>{renderModule()}</div>
+				<div>
+					<ResumeNav
+						currentModule={currentModule}
+						handleModuleChange={handleModuleChange}
+					></ResumeNav>
+				</div>
+			</div>
 		</div>
 	);
 }

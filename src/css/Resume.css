@@ -1,3 +1,19 @@
 .download-btn {
     font-size: x-large !important;
 }
+
+.techIcon {
+    font-size: 50px;
+}
+
+.university-logo {
+    max-width: 200px;
+}
+
+.resumeNav {
+    background-color: #fafafa;
+}
+
+.nav-link:active {
+    background-color: #fafafa !important;
+}

@@ -27,14 +27,6 @@ export default function About(props) {
 						and takes pride in producing high quality work.
 					</p>
 				</div>
-				<div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-					<button className="btn btn-primary btn-lg px-4 gap-3">
-						Projects
-					</button>
-					<button className="btn btn-outline-secondary btn-lg px-4 gap-3">
-						Contact
-					</button>
-				</div>
 			</div>
 		</div>
 	);
