@@ -3,17 +3,7 @@ import React from "react";
 export default function Navbar({ currentPage, handlePageChange }) {
 	return (
 		<div>
-			<div className="navbar">
-				<a
-					// if this is the current page, set to active link otherwise just be a nav-link
-					className={
-						currentPage === "Home" ? "nav-link active" : "nav-link"
-					}
-					href="#home"
-					onClick={() => handlePageChange("Home")}
-				>
-					Home
-				</a>
+			<div className="nav nav-pills nav-fill">
 				<a
 					className={
 						currentPage === "About" ? "nav-link active" : "nav-link"

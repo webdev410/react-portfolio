@@ -32,7 +32,7 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
 	},
-	"homepage": "https://webdev410.github.io/github-portfolio",
+	"homepage": "https://webdev410.github.io/react-portfolio/",
 	"eslintConfig": {
 		"extends": [
 			"react-app",

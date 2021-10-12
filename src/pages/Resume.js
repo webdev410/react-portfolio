@@ -32,12 +32,11 @@ export default function Resume(props) {
 		<div>
 			<div className="d-flex flex-column justify-content-between">
 				<div>{renderModule()}</div>
-				<div>
-					<ResumeNav
-						currentModule={currentModule}
-						handleModuleChange={handleModuleChange}
-					></ResumeNav>
-				</div>
+
+				<ResumeNav
+					currentModule={currentModule}
+					handleModuleChange={handleModuleChange}
+				></ResumeNav>
 			</div>
 		</div>
 	);

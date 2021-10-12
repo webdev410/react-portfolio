@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "./css/App.css";
 
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
@@ -24,9 +23,6 @@ function App() {
 	const [currentPage, setCurrentPage] = useState("About");
 
 	const renderPage = () => {
-		if (currentPage === "Home") {
-			return <Home title="Home"></Home>;
-		}
 		if (currentPage === "About") {
 			return <About title="About"></About>;
 		}

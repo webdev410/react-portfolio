@@ -75,9 +75,8 @@ export default function Contact(props) {
 					</div>
 					<div className="col-md-10 mx-auto col-lg-5">
 						<form className="p-4 p-md-5 border rounded-3 bg-light">
-							<div className="form-floating mb-3">
+							<div className="checkbox mb-3">
 								<input
-									key="afl2423"
 									className={
 										name
 											? "form-control m-1 valid"
@@ -91,9 +90,8 @@ export default function Contact(props) {
 									type="text"
 								/>
 							</div>
-							<div className="form-floating mb-3">
+							<div className="checkbox mb-3">
 								<input
-									key="afl2233"
 									className={
 										email
 											? "form-control m-1 valid"
@@ -108,8 +106,7 @@ export default function Contact(props) {
 								/>
 							</div>
 							<div className="checkbox mb-3">
-								<input
-									key="af1234l2423"
+								<textarea
 									className={
 										message
 											? "form-control m-1 valid"
@@ -125,7 +122,7 @@ export default function Contact(props) {
 							</div>
 							<button
 								type="button"
-								className="mt-2 btn btn-primary"
+								className="m-2 btn btn-primary"
 								onClick={handleFormSubmit}
 							>
 								Submit
