@@ -68,7 +68,7 @@ export default function Technologies() {
 						</p>
 						<div className="d-grid gap-2 d-md-flex justify-content-center">
 							<a
-								href="/assets/andrew-keiser-technical-skills.docx"
+								href="assets/andrew-keiser-technical-skills.docx"
 								download="andrew-keiser-technical-skills.docx"
 							>
 								<button

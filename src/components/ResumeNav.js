@@ -3,7 +3,7 @@ import React from "react";
 export default function ResumeNav({ currentModule, handleModuleChange }) {
 	return (
 		<div>
-			<div class="container">
+			<div class="container-fluid">
 				<header class="d-flex justify-content-center py-3">
 					<ul class="nav nav-pills">
 						<li class="nav-item">

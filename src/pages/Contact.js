@@ -127,11 +127,6 @@ export default function Contact(props) {
 							>
 								Submit
 							</button>
-
-							<p className="text-muted">
-								By clicking Sign up, you agree to the terms of
-								use.
-							</p>
 						</form>
 					</div>
 				</div>
