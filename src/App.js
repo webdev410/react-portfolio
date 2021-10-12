@@ -47,8 +47,10 @@ function App() {
 				currentPage={currentPage}
 				handlePageChange={handlePageChange}
 			></Navbar>
+
 			{/* Render component based off currentPage state */}
 			{renderPage()}
+
 			<div className="">
 				<Footer className=""></Footer>
 			</div>

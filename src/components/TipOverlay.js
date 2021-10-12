@@ -15,7 +15,7 @@ export default function TipOverlay() {
 		},
 		{
 			name: "LinkedIn",
-			url: "https://github.com/webdev410",
+			url: "https://www.linkedin.com/in/andrew-keiser-09a9742a/",
 			iconClass: "bi bi-linkedin",
 		},
 		{

@@ -13,7 +13,7 @@ export default function ResumeEducation() {
 							className="university-logo"
 							alt=""
 						/>
-						<h2>Johns Hopkins University</h2>
+						<h2 className="mt-2">Johns Hopkins University</h2>
 						<p>
 							An intensive 24-week bootcamp covering both
 							front-end and back-end development.
@@ -28,7 +28,7 @@ export default function ResumeEducation() {
 							className="university-logo"
 							alt=""
 						/>
-						<h2>Arizona State University</h2>
+						<h2 className="mt-2">Arizona State University</h2>
 						<p>Bachelor of Arts: English (Creative Writing)</p>
 						<code>Graduation: 2014</code>
 					</div>

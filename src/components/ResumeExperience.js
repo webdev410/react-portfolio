@@ -13,7 +13,7 @@ export default function ResumeExperience() {
 							className="university-logo"
 							alt="GoDaddy Logo"
 						/>
-						<h2>GoDaddy</h2>
+						<h2 className="mt-3">GoDaddy</h2>
 						<p>Hosting Sales & Support</p>
 					</div>
 				</div>
@@ -24,7 +24,9 @@ export default function ResumeExperience() {
 							className="university-logo"
 							alt="DHS Logo"
 						/>
-						<h2>Department of Homeland Security</h2>
+						<h2 className="mt-3">
+							Department of Homeland Security
+						</h2>
 						<p>Technical Support</p>
 					</div>
 				</div>
@@ -35,7 +37,7 @@ export default function ResumeExperience() {
 							className="university-logo"
 							alt="Ticketmaster Logo"
 						/>
-						<h2>Ticketmaster</h2>
+						<h2 className="mt-3">Ticketmaster</h2>
 						<p>Product Support</p>
 					</div>
 				</div>
@@ -46,7 +48,7 @@ export default function ResumeExperience() {
 							className="university-logo"
 							alt="Apple Logo"
 						/>
-						<h2>Apple</h2>
+						<h2 className="mt-3">Apple</h2>
 						<p>AppleCare Advisor</p>
 					</div>
 				</div>

@@ -15,7 +15,7 @@ export default function ResumeMain(props) {
 					</p>
 					<div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
 						<a
-							href="/assets/andrew-keiser-resume.docx"
+							href="assets/andrew-keiser-resume.docx"
 							download="andrew-keiser-resume.docx"
 						>
 							<button
@@ -28,7 +28,7 @@ export default function ResumeMain(props) {
 							</button>
 						</a>
 						<a
-							href="/assets/andrew-keiser-resume.pdf"
+							href="assets/andrew-keiser-resume.pdf"
 							download="andrew-keiser-resume.pdf"
 						>
 							<button
