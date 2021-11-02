@@ -6,3 +6,12 @@
 p {
     font-size: small;
 }
+
+.readMoreContent {
+    display: none;
+}
+
+.readMoreBtn {
+    background-color: transparent !important;
+    border: none;
+}
