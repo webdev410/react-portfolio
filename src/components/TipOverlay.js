@@ -19,9 +19,9 @@ export default function TipOverlay() {
 			iconClass: "bi bi-linkedin",
 		},
 		{
-			name: "Portfolio",
-			url: "https://andrewkeiser.me",
-			iconClass: "bi bi-globe2",
+			name: "Instagram",
+			url: "https://www.instagram.com/andrewkeiser_/",
+			iconClass: "bi bi-instagram",
 		},
 	];
 
