@@ -5,7 +5,7 @@ import PortfolioCard from "../components/PortfolioCard";
 
 const portfolioItems = [
 	{
-		title: "Full Portfolio",
+		title: "HTML Portfolio",
 		repo: "https://github.com/webdev410/andrewkeiser-portfolio",
 		deployed: "https://www.andrewkeiser.me/",
 	},
@@ -56,7 +56,7 @@ export default function Portfolio(props) {
 		document.title = `${props.title} | React Portfolio`;
 	});
 	return (
-		<div>
+		<div className="fadeIn">
 			<h1 className="display-5 fw-bold">{props.title}</h1>
 			<div className="container">
 				<p>

@@ -29,7 +29,7 @@ export default function Resume(props) {
 		document.title = `${props.title} | React Portfolio`;
 	});
 	return (
-		<div>
+		<div className="fadeIn">
 			<div className="d-flex flex-column justify-content-between">
 				<div>{renderModule()}</div>
 
