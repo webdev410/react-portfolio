@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 
 import "../css/Resume.css";
 
-import Technologies from "../components/ResumeTechnologies";
-import ResumeMain from "../components/ResumeMain";
-import ResumeNav from "../components/ResumeNav";
-import ResumeExperience from "../components/ResumeExperience";
-import ResumeEducation from "../components/ResumeEducation";
+import Technologies from "../components/Resume/ResumeTechnologies";
+import ResumeMain from "../components/Resume";
+import ResumeNav from "../components/Resume/ResumeNav";
+import ResumeExperience from "../components/Resume/ResumeExperience";
+import ResumeEducation from "../components/Resume/ResumeEducation";
 
 export default function Resume(props) {
 	const [currentModule, setModule] = useState("title");

@@ -8,7 +8,7 @@ export default function ResumeMain(props) {
 				<h1 className="display-5 fw-bold">{props.title}</h1>
 				<div className="col-lg-6 mx-auto">
 					<p className="lead mb-4">
-						Thank you for viewing my React portfolio.
+						Thank you for viewing my portfolio.
 					</p>
 					<p className="text-muted">
 						Download a printable copy of my resume
