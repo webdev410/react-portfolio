@@ -7,9 +7,12 @@ export default function ResumeMain(props) {
 			<div className="px-4 py-5 my-5 text-center">
 				<h1 className="display-5 fw-bold">{props.title}</h1>
 				<div className="col-lg-6 mx-auto">
-					<p className="lead mb-4">
-						Thank you for viewing my portfolio.
+					<p className="lead">Thank you for viewing my portfolio.</p>
+					<p className="text-muted subtext mb-4">
+						(Don't miss the resume navbar at the bottom of this
+						page!)
 					</p>
+
 					<p className="text-muted">
 						Download a printable copy of my resume
 					</p>

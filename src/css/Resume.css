@@ -22,3 +22,12 @@
 .fixed-bottom {
     margin-bottom: 10px;
 }
+
+.subtext {
+    margin: 0;
+    font-size: 12px;
+}
+
+.lead {
+    margin: 0;
+}
